@@ -187,7 +187,6 @@
     <Content Include="Images\blog-3.jpg" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\user_boy.png" />
-    <Content Include="index.html" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
