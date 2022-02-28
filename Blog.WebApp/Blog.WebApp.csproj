@@ -280,7 +280,6 @@
     <Content Include="Views\BlogUser\Details.cshtml" />
     <Content Include="Views\BlogUser\Edit.cshtml" />
     <Content Include="Views\BlogUser\Index.cshtml" />
-    <Content Include="Views\Home\BySearchQ.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
