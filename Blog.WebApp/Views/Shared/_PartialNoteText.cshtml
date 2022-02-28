@@ -1,0 +1,26 @@
+﻿@using Blog.Entities
+@model Note
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-md-12">
+
+        <h3 class="text-left">
+            <strong> Konu :</strong>   @Model.Title
+        </h3>
+    </div>
+    <div class="col-md-12">
+        <hr />
+    </div>
+    <div class="col-md-12 text-left ">
+        <span class="fa-solid fa-user "></span> <strong>Paylaşan Üye :</strong>  @Model.Owner.Username<br />
+        <span class="fa-solid fa-calendar-days"></span> <strong>Tarih ve Saat:</strong>  @Model.ModifiedOn.ToString("dd.MM.yyyy HH:mm")
+    </div>
+    <div class="col-md-12">
+        <hr />
+    </div>
+    <div class="col-md-12">
+        <p class="text-justify">
+            <strong>İçerik :</strong>  @Model.Text
+        </p>
+    </div>
+</div>
