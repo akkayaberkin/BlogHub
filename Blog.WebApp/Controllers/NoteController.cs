@@ -253,5 +253,6 @@ namespace Blog.WebApp.Controllers
 
             return PartialView("_PartialNoteText", note);
         }
+        
     }
 }

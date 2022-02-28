@@ -23,9 +23,16 @@ namespace Blog.WebApp.Controllers
         private BlogUserManager BlogUserManager = new BlogUserManager();
 
         // GET: Home
-        public ActionResult Index()
+        public ActionResult Index(string q="")
         {
-            return View(noteManager.ListQueryable().Where(x => x.IsDraft == false).OrderByDescending(x => x.ModifiedOn).ToList());
+            IQueryable<Note> noteListe = noteManager.ListQueryable().Where(x => x.IsDraft == false);
+            if (!string.IsNullOrEmpty(q))
+            {
+                noteListe=noteListe.Where(o => o.Title.ToLower().Replace(" ","").Contains(q.ToLower().Replace(" ","")));
+            }
+            noteListe.OrderByDescending(x => x.ModifiedOn);
+            List<Note> notelist = noteListe.ToList();
+            return View(notelist);
         }
 
         public ActionResult ByCategory(int? id)
@@ -173,7 +180,7 @@ namespace Blog.WebApp.Controllers
 
                 if (res.Errors.Count > 0)
                 {
-                   
+
                     res.Errors.ForEach(x => ModelState.AddModelError("", x.Message));
 
                     return View(model);
@@ -263,5 +270,31 @@ namespace Blog.WebApp.Controllers
         {
             return View();
         }
+
+        public ActionResult BySearch(string searchtxt)
+        {
+            IQueryable<Note> noteListeQ;
+            if (CurrentSession.User == null)
+            {
+                noteListeQ = noteManager.ListQueryable();
+            }
+            else
+            {
+                noteListeQ = noteManager.ListQueryable().Where(x => x.Owner.Id == CurrentSession.User.Id);
+            }
+            if (!string.IsNullOrEmpty(searchtxt))
+            {
+                noteListeQ = noteListeQ.Where(x => x.Title.Replace(" ", "").Contains(searchtxt.Replace(" ", "").ToString()));
+            }
+            noteListeQ.OrderByDescending(x => x.ModifiedOn);
+            List<Note> noteListe = noteListeQ.ToList();
+            if (noteListe == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View("Index", noteListe);
+        }
+        
     }
 }

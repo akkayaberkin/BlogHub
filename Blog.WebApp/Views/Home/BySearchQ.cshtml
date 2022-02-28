@@ -1,0 +1,71 @@
+﻿@using Blog.Entities
+@model List<Note>
+
+@{ ViewBag.Title = "Search"; }
+<!-- Page Content -->
+<link href="~/assets/css/style.css" rel="stylesheet" />
+<div class="container">
+    <div class="row">
+        <!-- Kategoriler -->
+        <div class="col-md-3">
+            @Html.Partial("_PartialCategories")
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="row noteList">
+                @foreach (Note note in Model)
+                {
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                @*<img src="#" alt="Image">*@
+                                <a href="#" data-toggle="modal" data-target="#modal_notedetail" data-note-id="@note.Id"><img src="@note.ImagePath" style="width:250px; height:250px" /></a>
+
+                                <div class="meta-date">
+                                    <span>@note.ModifiedOn.ToString("dd")</span>
+                                    <strong>@note.ModifiedOn.ToString("MM")</strong>
+                                    <span>@note.ModifiedOn.ToString("yyyy")</span>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>
+                                    <a href="#" data-toggle="modal" data-target="#modal_notedetail" data-note-id="@note.Id">
+                                        @note.Title
+                                    </a>
+                                </h3>
+
+                                <p>
+                                    @note.Text
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="">@note.ModifiedUsername</a></p>
+                                @*<p><i class="fa fa-star-o"></i><a href="">@note.LikeCount</a></p>*@
+                                <button class="btn btn-default btn-sm" type="button" data-liked="false" data-note-id="@note.Id">
+                                    <span class="fa-regular fa-star like-star"></span>&nbsp;
+
+                                    <span class="like-count">@note.LikeCount</span>
+                                </button>
+                                <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_comment" data-note-id="@note.Id">
+                                    <p><i class="fa fa-comments"></i></p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+@*@section footer{
+        @Html.Partial("_PartialFooter")
+    }*@
+
+@Bootstrap.ModalPopup(id: "modal_comment", title: "Yorumlar")
+@Bootstrap.ModalPopup(id: "modal_notedetail", title: "Not Detayı")
+
+<script src="~/Scripts/comment.js"></script>
+<script src="~/Scripts/like.js"></script>
+<script src="~/Scripts/NoteDetailPopup.js"></script>

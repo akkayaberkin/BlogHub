@@ -42,7 +42,7 @@
                 </div>
             </div>-->
             <!-- Notlar -->
-            <div class="row" style="margin-top:5%">
+            <div class="row noteList" style="margin-top:5%">
 
                 @*@foreach (Note note in Model)
                     {
@@ -120,7 +120,7 @@
                 </p>
             </div>
             <div class="blog-meta">
-                <p><i class="fa fa-user"></i><a href="">@note.ModifiedUsername</a></p>
+                <p style="margin-top:10px"><i class="fa fa-user"></i><a href="">@note.ModifiedUsername</a></p>
                 @*<p><i class="fa fa-star-o"></i><a href="">@note.LikeCount</a></p>*@
                 <button class="btn btn-default btn-sm" type="button" data-liked="false" data-note-id="@note.Id">
                     <span class="fa-regular fa-star like-star"></span>&nbsp;

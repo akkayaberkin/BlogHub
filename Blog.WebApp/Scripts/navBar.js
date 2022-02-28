@@ -10,4 +10,10 @@
 
 
     });
-}
+    $("#searchBox").change( function () {
+
+        let q = $(this).val();
+        //console.log(q);
+        window.location.href = "/Home/Index?q=" + q;
+    });
+})

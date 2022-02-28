@@ -266,11 +266,6 @@
     <Content Include="Views\Category\Details.cshtml" />
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
-    <Content Include="Views\EvernoteUser\Create.cshtml" />
-    <Content Include="Views\EvernoteUser\Delete.cshtml" />
-    <Content Include="Views\EvernoteUser\Details.cshtml" />
-    <Content Include="Views\EvernoteUser\Edit.cshtml" />
-    <Content Include="Views\EvernoteUser\Index.cshtml" />
     <Content Include="Views\Note\Create.cshtml" />
     <Content Include="Views\Note\Delete.cshtml" />
     <Content Include="Views\Note\Details.cshtml" />
@@ -280,6 +275,12 @@
     <Content Include="Views\Shared\_PartialNoteText.cshtml" />
     <Content Include="Views\Home\AccessDenied.cshtml" />
     <Content Include="Views\Home\HasError.cshtml" />
+    <Content Include="Views\BlogUser\Create.cshtml" />
+    <Content Include="Views\BlogUser\Delete.cshtml" />
+    <Content Include="Views\BlogUser\Details.cshtml" />
+    <Content Include="Views\BlogUser\Edit.cshtml" />
+    <Content Include="Views\BlogUser\Index.cshtml" />
+    <Content Include="Views\Home\BySearchQ.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

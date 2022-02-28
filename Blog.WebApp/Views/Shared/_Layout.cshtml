@@ -58,6 +58,7 @@
                         @Bootstrap.LinkMenuNew("/Home/MostLiked", "nav-item nav-link", " En Beğenilenler")
                         @Bootstrap.LinkMenuNew("/Home/Index", "nav-item nav-link", " Son Yazılar")
                         @Bootstrap.LinkMenuNew("/Home/About", "nav-item nav-link", " Hakkımızda")
+
                         @if (CurrentSession.User != null)
                         {
                         <div class="nav-item dropdown">
@@ -81,10 +82,15 @@
                             </div>
                         </div>
                         }
+
                         @*<a href="contact.html" class="nav-item nav-link">Contact</a>*@
                     </div>
                     <div class="ml-auto row">
-                    
+                        <div class="" style="margin-top:5px">
+                            <div class="form-outline">
+                                <input type="search" id="searchBox" class="form-control" placeholder="Yazı Arayın"/>
+                            </div>
+                        </div>
                       @if (CurrentSession.User == null)
                       {
                           @Bootstrap.LinkMenuNew("/Home/Login", "btn btn-custom", " Giriş Yap ")
