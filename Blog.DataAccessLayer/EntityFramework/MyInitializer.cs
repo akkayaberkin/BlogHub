@@ -71,7 +71,7 @@ namespace Blog.DataAccessLayer.EntityFramework
                 LikeCount = 0,
                 CategoryId = 1,
                 Owner = standartUser,
-                ImagePath = "/Images/125.59.2022.png",
+                ImagePath = "/Images/1.jpg",
                 CreatedOn = DateTime.Now.AddHours(1),
                 ModifiedOn = DateTime.Now.AddMinutes(65),
                 ModifiedUsername = "berkinakkaya"
@@ -85,7 +85,7 @@ namespace Blog.DataAccessLayer.EntityFramework
                 LikeCount = 0,
                 CategoryId = 2,
                 Owner = admin,
-                ImagePath = "/Images/3f8a3ce485e39521f5271b2ef01deeb425.59.2022.jpg",
+                ImagePath = "/Images/2.jpg",
                 CreatedOn = DateTime.Now.AddHours(1),
                 ModifiedOn = DateTime.Now.AddMinutes(65),
                 ModifiedUsername = "berkinakkaya"
