@@ -1,5 +1,5 @@
 # BlogHub
-if you taking this error : <strong>"Roslyn"</strong></br>
+if you taking this error: <strong>"Roslyn"</strong></br>
 Write package console this code:</br>
 
 Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
@@ -18,15 +18,15 @@ Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
 # Project Summary </br>
 
 🌱The project has Code First Approach, </br>
-🌱The project has Authentication Filter, </br>
-🌱The project has Repository Pattern , </br>
-🌱The project has Cache , </br>
+🌱The project has an Authentication Filter, </br>
+🌱The project has Repository Pattern, </br>
+🌱The project has Cache, </br>
 -----------------------------------------------
-🌱You can add Category, User and Blog Post </br>
-🌱You can authorize and delete users,  </br>
-🌱You can edit your profile, </br>
-🌱You can search by SearchBox, </br>
-🌱You can filter by category, </br>
-🌱You can send comment and like. </br>
+🌱Admin can add Category, User and Blog Post </br>
+🌱Admin can authorize and delete users,  </br>
+🌱Users can edit their profile, </br>
+🌱Users can search by SearchBox, </br>
+🌱Users can filter by category, </br>
+🌱Users can comment and like post. </br>
 -----------------------------------------------
 ![Dash](https://user-images.githubusercontent.com/40911975/156073021-08aa81d3-57da-488e-aca0-3fa46c16c11a.png)
