@@ -25,7 +25,7 @@ namespace Blog.BusinessLayer
                 {
                     likedManager.Delete(like);
                 }
-
+                
                 // Note ile ilişkili comment'lerin silinmesi
                 foreach (Comment comment in note.Comments.ToList())
                 {
