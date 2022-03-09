@@ -72,19 +72,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Blog.Common\Blog.Common.csproj">
-      <Project>{C555F954-349B-4C46-82FC-8D37768EE017}</Project>
+      <Project>{c555f954-349b-4c46-82fc-8d37768ee017}</Project>
       <Name>Blog.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Blog.Core\Blog.Core.csproj">
-      <Project>{1E58F14A-0C96-408E-97D7-CFFEB240157F}</Project>
+      <Project>{1e58f14a-0c96-408e-97d7-cffeb240157f}</Project>
       <Name>Blog.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Blog.DataAccessLayer\Blog.DataAccessLayer.csproj">
-      <Project>{CCF21158-A99D-4AE8-A305-BD1FBCDFFD5F}</Project>
+      <Project>{ccf21158-a99d-4ae8-a305-bd1fbcdffd5f}</Project>
       <Name>Blog.DataAccessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\Blog.Entities\Blog.Entities.csproj">
-      <Project>{1DC28A30-9F93-4403-BCC3-CB1D66D5163E}</Project>
+      <Project>{1dc28a30-9f93-4403-bcc3-cb1d66d5163e}</Project>
       <Name>Blog.Entities</Name>
     </ProjectReference>
   </ItemGroup>
