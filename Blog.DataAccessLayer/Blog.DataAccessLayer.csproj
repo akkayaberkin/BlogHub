@@ -7,8 +7,8 @@
     <ProjectGuid>{CCF21158-A99D-4AE8-A305-BD1FBCDFFD5F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyEvernote.DataAccessLayer</RootNamespace>
-    <AssemblyName>MyEvernote.DataAccessLayer</AssemblyName>
+    <RootNamespace>Blog.DataAccessLayer</RootNamespace>
+    <AssemblyName>Blog.DataAccessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

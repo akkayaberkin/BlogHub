@@ -7,8 +7,8 @@
     <ProjectGuid>{C555F954-349B-4C46-82FC-8D37768EE017}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyEvernote.Common</RootNamespace>
-    <AssemblyName>MyEvernote.Common</AssemblyName>
+    <RootNamespace>Blog.Common</RootNamespace>
+    <AssemblyName>Blog.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

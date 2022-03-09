@@ -7,8 +7,8 @@
     <ProjectGuid>{D53C0DA9-3688-4CD5-A28D-1CE1BC676CF3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyEvernote.BusinessLayer</RootNamespace>
-    <AssemblyName>MyEvernote.BusinessLayer</AssemblyName>
+    <RootNamespace>Blog.BusinessLayer</RootNamespace>
+    <AssemblyName>Blog.BusinessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
